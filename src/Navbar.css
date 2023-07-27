@@ -1,0 +1,94 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 0.5rem; /* Add margin to create a little gap */
+}
+
+/* Navbar Links (Desktop) */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar-link:hover {
+  color: #ccc;
+}
+
+/* Mobile Menu Icon */
+.navbar-mobile-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navbar Links (Mobile) */
+.navbar-links.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  z-index: 1;
+}
+
+/* Login Button */
+.navbar-login-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+/* Cart Icon */
+.navbar-cart-icon {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar-basket-count {
+  color: #fff;
+}
+
+/* Mobile Menu Icon (Active) */
+.navbar-mobile-menu-icon.active {
+  display: block;
+}
+
+/* Media Query for Mobile Menu */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-mobile-menu-icon {
+    display: block;
+  }
+
+  .navbar-links.mobile {
+    display: flex;
+  }
+}

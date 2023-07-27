@@ -1,0 +1,19 @@
+.Slider {
+    margin-top: 20px;
+  }
+  .Slider:hover{
+    opacity: 1;
+    transition: opacity 0.2s ease 0s;
+  }
+.wrap{
+    border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+
+
+}
+.Image{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}

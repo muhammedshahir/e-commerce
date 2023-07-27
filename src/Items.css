@@ -1,0 +1,226 @@
+.Items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* set the number of columns and their width */
+  grid-gap: 20px; /* add spacing between items */
+}
+
+.ItemsHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.ItemsImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.ItemsDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.ItemsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ItemsPrice {
+  font-size: 16px;
+  color: #f00;
+  font-weight: 500;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.Cart {
+  margin-top: 30px;
+}
+
+.Cart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.CartImg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.CartItemDetails {
+  display: flex;
+  align-items: center;
+}
+
+.CartItemTitle {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.CartItemPrice {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.CartItemDetails button {
+  margin-left: auto;
+  background-color: #ff0000;
+}
+
+.CartItemDetails button:hover {
+  background-color: #cc0000;
+}
+/* Items.css */
+
+/* ...existing styles... */
+/* 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  max-height: 80%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+} */
+
+.ItemsHead.active .AdditionalImages {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.ItemsHead.active .AdditionalImages img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* CSS for modal and additional images */
+.AdditionalImages {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.AdditionalImages img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.ModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.ModalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+.Popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PopupContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.Close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.PopupImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
